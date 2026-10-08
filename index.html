@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PitchIn: Natural-Language Singing Coaching from Unstructured Community Feedback. Listen to audio examples and try the singing feedback demo.">
+  <link rel="canonical" href="https://hayeonbang.github.io/PitchIn/">
+  <title>PitchIn: Natural-Language Singing Coaching</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="paper-header wrap">
+    <h1><span>PitchIn:</span> Natural-Language Singing Coaching<br class="desktop-break"> from Unstructured Community Feedback</h1>
+    <div class="authors" id="authors"></div>
+    <div class="publication-links"><a href="#examples">Audio examples</a><a href="#demo">Try the demo</a></div>
+  </header>
+  <main id="main">
+    <figure class="overview-figure wrap">
+      <a href="assets/vc_fig.pdf" target="_blank" rel="noopener" aria-label="Open the PitchIn overview figure as a PDF"><img src="assets/peercoach-overview.png" width="2268" height="945" alt="PitchIn overview: community singing feedback is reconstructed into Focused QA, Overall Feedback, and Recognition QA. Audio–language models are adapted with a frozen audio encoder and language-model LoRA."></a>
+      <figcaption>PeerCoach construction and PitchIn training. PitchIn-Q and PitchIn-M use FQA + OF; Recognition QA is an additional experimental condition.</figcaption>
+    </figure>
+    <p class="overview narrow">PitchIn learns to give natural-language singing feedback from observations and advice shared in singing communities. We build <strong>PeerCoach</strong> by reconstructing these interactions into instruction examples, then adapt Qwen2.5-Omni and MOSS-Music using <strong>Focused QA and Overall Feedback</strong>. At inference time, the model needs only a recording and a question.</p>
+
+    <section class="section example-section" id="examples" aria-labelledby="examples-title"><div class="wrap">
+      <h2 id="examples-title">Audio Examples</h2>
+      <p class="section-description">Selected full recordings with unedited responses from pretrained Qwen2.5-Omni-7B and PitchIn-Q. Notes compare the responses with expert references.</p>
+      <div class="question-row"><strong>Question</strong><p id="case-question"></p></div>
+      <div class="example-tabs" role="tablist" aria-label="Choose an audio example" id="example-tabs"></div>
+      <div id="example-panel" role="tabpanel" tabindex="0">
+        <div class="example-context"><h3 id="case-title"></h3><audio id="case-audio" controls preload="metadata" aria-label="Selected singing recording"></audio></div>
+        <p class="audio-error" id="audio-error" role="status" hidden>Unable to load this recording.</p>
+        <div class="response-grid"><article class="response-card"><div class="response-header"><h4>Pretrained</h4></div><div class="model-response" id="pretrained-response" tabindex="0" aria-label="Pretrained model response"></div></article><article class="response-card pitchin-response"><div class="response-header"><h4>PitchIn-Q</h4><span>FQA + OF</span></div><div class="model-response" id="pitchin-response" tabindex="0" aria-label="PitchIn-Q response"></div></article></div>
+        <p class="case-note" id="case-note"></p>
+      </div>
+    </div></section>
+
+    <section class="section wrap demo-section" id="demo" aria-labelledby="demo-title">
+      <h2 id="demo-title">Try PitchIn</h2>
+      <p class="section-description">Upload a singing clip and ask a question. English questions recommended.</p>
+      <p class="embed-status" id="embed-status" role="status">Connecting to the demo…</p>
+      <iframe id="gradio-demo" title="PitchIn singing feedback demo" allow="microphone" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      <p class="demo-fallback"><a id="demo-link" href="https://huggingface.co/spaces/Hayeonbang/PitchIn" target="_blank" rel="noopener noreferrer">Open on Hugging Face ↗</a></p>
+    </section>
+    <section class="citation-section narrow" aria-label="Citation"><details><summary>BibTeX</summary><div class="citation-heading"><span>Manuscript, 2026</span><button type="button" id="copy-citation">Copy</button></div><pre id="citation"></pre><span id="citation-copy-status" class="copy-status" role="status"></span></details></section>
+  </main>
+  <footer>PitchIn</footer>
+  <noscript><p class="noscript">Enable JavaScript to view the audio comparisons.</p></noscript>
+</body>
+</html>
