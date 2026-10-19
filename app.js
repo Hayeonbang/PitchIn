@@ -14,7 +14,12 @@
   };
   for (const person of content.authors) {
     const author = element('span', 'author');
-    author.append(document.createTextNode(person.name), element('sup', '', person.affiliation));
+    let name = document.createTextNode(person.name);
+    if (person.url) {
+      name = element('a', '', person.name);
+      name.href = person.url;
+    }
+    author.append(name, element('sup', '', person.affiliation));
     $('authors').append(author);
   }
   $('authors').append(element('p', '', content.affiliations));

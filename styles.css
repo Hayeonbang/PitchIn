@@ -10,3 +10,4 @@
 .demo-section{padding-top:38px}.demo-section .section-description{text-align:center}.demo-section iframe{display:block;width:100%;height:790px;border:0;border-radius:0;background:white}.embed-status{font-size:12px;color:#666;text-align:center;margin-bottom:14px}.demo-fallback{text-align:right;font-size:12px;margin-top:12px}@media(max-width:680px){.demo-section iframe{height:1100px}.demo-section .section-description{text-align:left}}
 
 .demo-pending{max-width:640px;margin:0 auto;padding:22px;border:1px solid #dedede;border-radius:4px;background:#fafafa;font-size:14px;}
+.author a{color:inherit}

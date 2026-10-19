@@ -2,7 +2,8 @@ window.PITCHIN_CONTENT = {
   "authors": [
     {
       "name": "Hayeon Bang",
-      "affiliation": "1"
+      "affiliation": "1",
+      "url": "https://hayeonbang.github.io/"
     },
     {
       "name": "Hounsu Kim",
