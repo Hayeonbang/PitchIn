@@ -31,21 +31,21 @@ window.PITCHIN_CONTENT = {
   "examples": [
     {
       "id": "case-01",
-      "tab": "Pitch accuracy",
-      "title": "Pitch accuracy",
+      "tab": "Breath and vowels",
+      "title": "Breath and vowels",
       "audio": "assets/case-01.mp3",
-      "pretrained": "Your singing has a rich tone and good pitch. To enhance your performance, focus on breath control to maintain consistent volume throughout the song, and work on articulation for clearer enunciation of words. Additionally, consider practicing with a metronome to improve your tempo accuracy.",
-      "pitchin": "Your tone comes across very nice and pleasant to listen to, so the basic sound is working well for you. The part that needs the most attention is pitch: there are moments where the notes drift sharp or flat, which makes some phrases feel less settled than they could. For improvement, focus on ear training and pitch accuracy rather than trying to change your natural tone too much. Use a tuner with a piano app, play single notes, match them, and repeat until you can consistently land in tune. You can also practice slow scales daily and do simple ear exercises like matching pitch from ear to ear before singing full lines again.",
-      "note": "PitchIn identifies pitch drift and suggests tuner practice, partially agreeing with experts who noted frequent pitch drops."
+      "pretrained": "Your singing sounds good! You have a nice voice, but you should try to sing with more emotion and feeling. Also, you could work on your breath control to make your voice sound even better. Keep practicing and you'll get there!",
+      "pitchin": "Your voice has a lovely quality, but it sounds like you’re not using enough breath support, so the tone doesn’t have much strength behind it yet. The biggest thing to work on is breath: keep your stomach pulled in while you sing instead of letting the air collapse out from the back. That will help the sound feel more stable and less held back. Also pay attention to vowel shapes—some of them seem a bit closed or narrow, which can make the tone feel smaller than it needs to be. Practice singing the same phrase with a more open, released vowel shape, then compare that to the original way you were singing. Keep the words clear, but let the vowel space open up more. For practice, try lip trills on easy phrases first. Aim for an even, steady stream of air all the way through the phrase without collapsing inward. Then sing the same phrase normally while keeping that same steady airflow feeling.",
+      "note": "PitchIn points to weak breath support and closed vowels, matching one expert who ranked breath first and asked for vowel practice. Neither model mentions the unstable pitch and rhythm the experts also noted."
     },
     {
       "id": "case-02",
-      "tab": "Breath and phrasing",
-      "title": "Breath and phrasing",
+      "tab": "Breath over pitch",
+      "title": "Breath over pitch",
       "audio": "assets/case-02.mp3",
-      "pretrained": "Your voice sounds beautiful! You have a natural talent for singing. To further enhance your skills, consider taking vocal lessons to refine your technique and learn proper breathing techniques. Additionally, practice regularly and listen to a variety of music genres to expand your range and expressiveness.",
-      "pitchin": "Your tone is pleasant, but the pitch sounds inconsistent, especially when you go higher. You also seem to run out of air quickly, so the breath support isn’t staying steady enough for the phrases. To improve, spend time on breathing: inhale comfortably, then do gentle lip trills or sustained notes while keeping the airflow even instead of pushing. That should help your higher notes feel less forced and make the pitch more stable.",
-      "note": "PitchIn links pitch and breath observations to practice; its explanation of the high notes remains unverified."
+      "pretrained": "Your singing sounds very clear and expressive, with good control over your voice. You have a wide range of notes and good intonation. However, there is room for improvement in terms of dynamics and breath control. Try to work on controlling your breath better during the high notes and adding more variation in your dynamics to make your performance more engaging. Overall, you have great potential as a singer and with some practice, you can achieve even greater success.",
+      "pitchin": "Your pitch is generally in tune, so the notes are landing where they should for the most part. The area that needs the most attention is breath support: it sounds like you’re not getting enough air underneath the phrases, which makes the delivery feel less supported and less confident. Work on taking low, relaxed breaths before each phrase instead of grabbing quick little “bites” of air. Try “in for 4, hiss for 8–12” comfortably, then sing the same line at a soft volume first and repeat it at normal volume while keeping the airflow steady. Also practice holding notes longer with a steady tone rather than letting them fade early or rush through. That will help the pitch stay steadier and make your voice feel more reliable.",
+      "note": "Both experts judged pitch as acceptable and ranked breath first, noting that single notes are not sustained. PitchIn makes the same call; the pretrained model praises intonation and potential with general advice."
     },
     {
       "id": "case-03",
